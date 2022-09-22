@@ -95,6 +95,7 @@ form, iframe{
 
 h1{
     @include textos($text-xlarge, $color-light-gray);
+    font-weight: 800;
 }
 
 h2{
