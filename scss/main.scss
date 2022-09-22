@@ -1,3 +1,123 @@
 @import "_vars";
 @import "_breakpoints";
 
+//nav
+nav{
+    background-color: $color-light-green;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    img{
+        width: 180px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-right: 20px;
+            a{
+                text-decoration: none;
+                color: $color-light-gray;
+                font-size: $text-medium;
+                &:hover{
+                    color: rgb(0, 0, 0);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+
+form, iframe{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+
+}input[type=button], input[type=submit], input[type=reset] {
+    background-color: $color-light-green;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+
+.box-comun{
+    margin-inline: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box-green{
+    @extend .box-comun;
+    background-color: $color-light-green;
+}
+
+.box-dark-brown{
+    @extend .box-comun;
+    background-color: $color-dark-brown;
+}
+
+.box-light-brown{
+    @extend .box-comun;
+    background-color: $color-light-brown;
+}
+
+.style-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+}
+
+.style-recetas{
+    @extend .style-img;
+    width: 300px;
+}
+
+.style-index{
+    @extend .style-img;
+    width: 200px;
+}
+
+@mixin textos($size, $color){
+    font-size: $size;
+    color: $color;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.link-recetas{
+    @include textos($text-medium, $color-light-gray);
+    text-decoration: none;
+    &:hover{
+        color: rgb(0, 0, 0);
+        transition: all 1s;
+    }
+}
+
+h1{
+    @include textos($text-xlarge, $color-light-gray);
+}
+
+h2{
+    @include textos($text-large, $color-light-gray);
+    text-decoration: underline;
+}
+
+h3{
+    @include textos($text-medium, $color-light-gray);
+}
+
+h4{
+    @include textos($text-xsmall, $color-light-gray);
+}
+
+p{
+    @include textos($text-small, $color-light-gray);
+    padding: 10px;
+}
+
+footer{
+    background-color: $color-light-green;
+    border-top: solid 2px rgb(0, 0, 0);
+}

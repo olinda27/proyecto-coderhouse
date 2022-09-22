@@ -6,3 +6,155 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+#navbar {
+  grid-area: navbar;
+}
+
+#header {
+  grid-area: carrusel;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+@media (min-width: 500px) {
+  .contenedor-comun {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navbar" "carrusel" "main" "footer";
+  }
+  #contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+nav {
+  background-color: rgb(100, 126, 104);
+  border-bottom: solid 2px rgb(0, 0, 0);
+}
+nav img {
+  width: 180px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  font-size: 1.5rem;
+}
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+
+form, iframe {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: rgb(100, 126, 104);
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.box-comun, .box-light-brown, .box-dark-brown, .box-green {
+  margin-inline: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.box-green {
+  background-color: rgb(100, 126, 104);
+}
+
+.box-dark-brown {
+  background-color: rgb(135, 100, 69);
+}
+
+.box-light-brown {
+  background-color: rgb(187, 153, 129);
+}
+
+.style-img, .style-index, .style-recetas {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.style-recetas {
+  width: 300px;
+}
+
+.style-index {
+  width: 200px;
+}
+
+.link-recetas {
+  font-size: 1.5rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+  text-decoration: none;
+}
+.link-recetas:hover {
+  color: rgb(0, 0, 0);
+  transition: all 1s;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+}
+
+h4 {
+  font-size: 1rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 1.3rem;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+footer {
+  background-color: rgb(100, 126, 104);
+  border-top: solid 2px rgb(0, 0, 0);
+}

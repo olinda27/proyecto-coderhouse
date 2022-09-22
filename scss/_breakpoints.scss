@@ -1,0 +1,33 @@
+#navbar{
+    grid-area: navbar;
+}
+
+#header{
+    grid-area: carrusel;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+@media (min-width: 500px){
+    .contenedor-comun{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navbar"
+        "carrusel"
+        "main" 
+        "footer";
+    }
+
+    #contenido{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
