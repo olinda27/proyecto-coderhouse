@@ -10,9 +10,6 @@ body{
 
 //Variables para colores
 $color-dark-blue: rgb(24, 39, 71);
-$color-light-brown: rgb(187, 153, 129);
-$color-dark-brown: rgb(135, 100, 69);
-$color-light-green: rgb(100, 126, 104);
 $color-light-gray: rgb(216, 216, 216);
 
 //Variables tamaño de letras
@@ -21,3 +18,10 @@ $text-large: 2.2rem;
 $text-medium: 1.5rem;
 $text-small: 1.3rem;
 $text-xsmall: 1rem;
+
+//Maps
+$background:(
+    'green': rgb(100, 126, 104),
+    'brown': rgb(135, 100, 69),
+    'light-brown': rgb(187, 153, 129),
+);

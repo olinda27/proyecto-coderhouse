@@ -3,7 +3,7 @@
 
 //nav
 nav{
-    background-color: $color-light-green;
+    background-color: map-get($map: $background, $key:'green');
     border-bottom: solid 2px rgb(0, 0, 0);
     img{
         width: 180px;
@@ -31,7 +31,7 @@ form, iframe{
     margin: 20px;
 
 }input[type=button], input[type=submit], input[type=reset] {
-    background-color: $color-light-green;
+    background-color: map-get($map: $background, $key:'green');
     border: none;
     color: white;
     padding: 8px 8px;
@@ -50,17 +50,17 @@ form, iframe{
 
 .box-green{
     @extend .box-comun;
-    background-color: $color-light-green;
+    background-color: map-get($map: $background, $key:'green');
 }
 
 .box-dark-brown{
     @extend .box-comun;
-    background-color: $color-dark-brown;
+    background-color: map-get($map: $background, $key:'brown');
 }
 
 .box-light-brown{
     @extend .box-comun;
-    background-color: $color-light-brown;
+    background-color: map-get($map: $background, $key:'light-brown');
 }
 
 .style-img{
@@ -118,6 +118,6 @@ p{
 }
 
 footer{
-    background-color: $color-light-green;
+    background-color: map-get($map: $background, $key:'green');
     border-top: solid 2px rgb(0, 0, 0);
 }
