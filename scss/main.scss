@@ -116,7 +116,21 @@ p{
     padding: 10px;
 }
 
+//Footer
 footer{
     background-color: map-get($map: $background, $key:'green');
     border-top: solid 2px rgb(0, 0, 0);
+}
+
+//Estilos para página 404
+#error-404 h1{
+    font-size: 5rem;
+}
+
+#error-404 p{
+    font-size: $text-xlarge;
+}
+
+#error-404 img{
+    width: 300px;
 }
